@@ -1,0 +1,10 @@
+---
+ - name: Update Apt Packages
+   hosts: elk
+   become: true
+   tasks: 
+    - name: Ansible Update Cache and install openssl
+      apt:
+        name: openssl
+        state: present
+        update_cache: yes
