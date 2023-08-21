@@ -1,6 +1,6 @@
 ---
  - name: Update Apt Packages
-   hosts: 10.1.1.8
+   hosts: mysql.thepackhams.com
    become: true
    tasks: 
     - name: Ansible Update Cache and install openssl
